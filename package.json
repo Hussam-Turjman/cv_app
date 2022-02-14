@@ -14,11 +14,15 @@
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
     "@mui/material": "latest",
+    "@mui/icons-material":"latest",
+    "markdown-to-jsx":"latest",
+    "@types/markdown-to-jsx":"latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
     "typescript": "^4.5.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webfontloader":"latest"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -47,6 +51,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "@babel/plugin-transform-react-constant-elements":"latest",
+    "@babel/preset-typescript":"latest",
+    "@types/marked":"latest"
   }
 }
