@@ -5,6 +5,9 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import Avatar from '@mui/material/Avatar';
+import hussam_image from '../images/hussam.jpeg'
+import ResponsiveAppBar from "./AppBar"
 
 interface HeaderProps {
   sections: ReadonlyArray<{
@@ -14,13 +17,15 @@ interface HeaderProps {
   title: string;
 }
 
+
 export default function Header(props: HeaderProps) {
   const { sections, title } = props;
-
+  //return ResponsiveAppBar();
   return (
+    
     <React.Fragment>
-      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Button size="small">Subscribe</Button>
+      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }} >
+        
         <Typography
           component="h2"
           variant="h5"
@@ -31,12 +36,17 @@ export default function Header(props: HeaderProps) {
         >
           {title}
         </Typography>
+        <Avatar 
+        alt="Hussam Turjman" 
+        src={hussam_image}
+        sx={{ width: 56, height: 56 }}
+         />
+        {/* 
         <IconButton>
           <SearchIcon />
         </IconButton>
-        <Button variant="outlined" size="small">
-          Sign up
-        </Button>
+        */}
+        
       </Toolbar>
       <Toolbar
         component="nav"
