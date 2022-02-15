@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import hussam_image from '../images/hussam.jpeg'
 
-const pages = ['About', 'CV', 'Blog','Portfolio'];
+const pages = ['About', 'CV', 'Blog','Portfolio','Services'];
 const settings = ['About'];
 
 const ResponsiveAppBar = () => {
