@@ -16,7 +16,7 @@ import hussam_image from '../images/hussam.jpeg'
 const pages = ['About', 'CV', 'Blog','Portfolio','Services'];
 const settings = ['About'];
 
-const ResponsiveAppBar = () => {
+const TopBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -143,4 +143,4 @@ const ResponsiveAppBar = () => {
     </AppBar>
   );
 };
-export default ResponsiveAppBar;
+export default TopBar;

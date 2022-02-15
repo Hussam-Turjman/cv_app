@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Avatar from '@mui/material/Avatar';
 import hussam_image from '../images/hussam.jpeg'
-import ResponsiveAppBar from "./AppBar"
+
 
 interface HeaderProps {
   sections: ReadonlyArray<{
@@ -20,7 +20,7 @@ interface HeaderProps {
 
 export default function Header(props: HeaderProps) {
   const { sections, title } = props;
-  //return ResponsiveAppBar();
+  
   return (
     
     <React.Fragment>
@@ -55,6 +55,7 @@ export default function Header(props: HeaderProps) {
       >
         {sections.map((section) => (
           <Link
+          
             color="inherit"
             noWrap
             key={section.title}
