@@ -5,6 +5,8 @@ import Container from '@mui/material/Container';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
 import {  ThemeProvider } from '@mui/material/styles';
 import theme from '../theme'
 import Header from './Header';
@@ -14,8 +16,6 @@ import Main from './Main';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 import post1 from './blog-post.1.md';
-import post2 from './blog-post.2.md';
-import post3 from './blog-post.3.md';
 import ResponsiveAppBar from './AppBar'
 import Divider from '@mui/material/Divider';
 
@@ -29,10 +29,10 @@ const mainFeaturedPost = {
   title: 'Welcome to my personal website',
   //title:'',
   description:
-    "I am a passionate data scientist with a decent experience in research and development.",
+    "I am a professional software engineer and a passionate data scientist with a decent experience in research and development.",
   //image: 'https://wallpaperboat.com/wp-content/uploads/2020/04/minimalist-aesthetic-wallpaper-12.jpg',
   //image:'https://assets.hongkiat.com/uploads/minimalist-dekstop-wallpapers/4k/original/08.jpg',
-  image:'https://hdwallpaperim.com/wp-content/uploads/2017/08/31/163851-minimalism-748x468.jpg',
+  image:'https://wallpapercave.com/wp/wp4533125.jpg',
   imageText: 'main image description',
   linkText: '',
 };
@@ -56,29 +56,20 @@ const featuredPosts = [
   },
 ];
 
-const posts = [post1, post2, post3];
+const posts = [post1];
 
 const sidebar = {
   title: 'About',
   description:
-    'Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.',
+    'My name is Hussam Turjman and I am a professional software engineer based in Bremen, Germany. I am interested in developing intelligent and efficient machine learning models.',
   archives: [
-    { title: 'March 2020', url: '#' },
-    { title: 'February 2020', url: '#' },
-    { title: 'January 2020', url: '#' },
-    { title: 'November 1999', url: '#' },
-    { title: 'October 1999', url: '#' },
-    { title: 'September 1999', url: '#' },
-    { title: 'August 1999', url: '#' },
-    { title: 'July 1999', url: '#' },
-    { title: 'June 1999', url: '#' },
-    { title: 'May 1999', url: '#' },
-    { title: 'April 1999', url: '#' },
+    { title: 'work in progress ..', url: '#' },
   ],
   social: [
-    { name: 'GitHub', icon: GitHubIcon },
-    { name: 'Twitter', icon: TwitterIcon },
-    { name: 'Facebook', icon: FacebookIcon },
+    { name: 'Email', icon: EmailIcon,link:"mailto:hussam.turjman@gmail.com" },
+    { name: 'GitHub', icon: GitHubIcon,link:"https://github.com/Hussam-Turjman" },
+    { name: 'LinkedIn', icon: LinkedInIcon,link:"https://www.linkedin.com/in/mohammed-hussam-al-turjman-36ab761ab/" },
+  
   ],
 };
 
@@ -107,7 +98,7 @@ export default function Blog() {
           </Grid>
             */}
           <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Main title="From the firehose" posts={posts} />
+            <Main title="Recent blog posts" posts={posts} />
             <Sidebar
               title={sidebar.title}
               description={sidebar.description}
