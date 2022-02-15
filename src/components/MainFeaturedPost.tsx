@@ -23,7 +23,7 @@ export default function MainFeaturedPost(props: MainFeaturedPostProps) {
       sx={{
         position: 'relative',
         backgroundColor: 'grey.800',
-        color: '#fff',
+        color: '#00000',
         mb: 4,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
@@ -40,7 +40,7 @@ export default function MainFeaturedPost(props: MainFeaturedPostProps) {
           bottom: 0,
           right: 0,
           left: 0,
-          backgroundColor: 'rgba(0,0,0,.3)',
+          backgroundColor: 'rgba(255, 255, 255,.9)',
         }}
       />
       <Grid container>
@@ -52,7 +52,7 @@ export default function MainFeaturedPost(props: MainFeaturedPostProps) {
               pr: { md: 0 },
             }}
           >
-            <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+            <Typography component="h1" variant="h4" color="inherit" gutterBottom>
               {post.title}
             </Typography>
             <Typography variant="h5" color="inherit" paragraph>

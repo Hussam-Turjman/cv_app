@@ -5,7 +5,8 @@ import Container from '@mui/material/Container';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {  ThemeProvider } from '@mui/material/styles';
+import theme from '../theme'
 import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
@@ -15,6 +16,8 @@ import Footer from './Footer';
 import post1 from './blog-post.1.md';
 import post2 from './blog-post.2.md';
 import post3 from './blog-post.3.md';
+import ResponsiveAppBar from './AppBar'
+import Divider from '@mui/material/Divider';
 
 const sections = [
   { title: 'About', url: '#' },
@@ -24,11 +27,12 @@ const sections = [
 
 const mainFeaturedPost = {
   title: 'Welcome to my personal website',
+  //title:'',
   description:
-    "I am a passionate computer scientist and AI specialist with a decent experience in research and development.",
+    "I am a passionate data scientist with a decent experience in research and development.",
   //image: 'https://wallpaperboat.com/wp-content/uploads/2020/04/minimalist-aesthetic-wallpaper-12.jpg',
-  image:'https://assets.hongkiat.com/uploads/minimalist-dekstop-wallpapers/4k/original/08.jpg',
-  
+  //image:'https://assets.hongkiat.com/uploads/minimalist-dekstop-wallpapers/4k/original/08.jpg',
+  image:'https://hdwallpaperim.com/wp-content/uploads/2017/08/31/163851-minimalism-748x468.jpg',
   imageText: 'main image description',
   linkText: '',
 };
@@ -78,15 +82,21 @@ const sidebar = {
   ],
 };
 
-const theme = createTheme();
 
 export default function Blog() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Personal Website of Hussam Al Turjman" sections={sections} />
+       <ResponsiveAppBar/>
+       <Divider variant="middle" />
+    
+       {/*
+       <Header title="Personal Website of Hussam Al Turjman" sections={sections} />
+       */}
+        
        
+        
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
            {/* 
