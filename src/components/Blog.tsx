@@ -23,6 +23,7 @@ const sections = [
   { title: 'About', url: '#' },
   { title: 'CV', url: '#' },
   { title: 'Portfolio', url: '#' },
+  { title: 'Service', url: '#' },
 ];
 
 const mainFeaturedPost = {
