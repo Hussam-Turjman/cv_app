@@ -8,6 +8,24 @@ import Link from '@mui/material/Link';
 import Avatar from '@mui/material/Avatar';
 import hussam_image from '../images/hussam.jpeg'
 
+import {
+  Link as RouterLink,
+  LinkProps as RouterLinkProps,
+  MemoryRouter,
+} from 'react-router-dom';
+
+
+const LinkBehavior = React.forwardRef<
+  any,
+  Omit<RouterLinkProps, 'to'> & { href: RouterLinkProps['to'] }
+>((props, ref) => {
+  const { href, ...other } = props;
+  // Map href (MUI) -> to (react-router)
+  return <RouterLink ref={ref} to={href} {...other} />;
+});
+
+
+
 
 interface HeaderProps {
   sections: ReadonlyArray<{
@@ -55,7 +73,7 @@ export default function Header(props: HeaderProps) {
       >
         {sections.map((section) => (
           <Link
-          
+            component={LinkBehavior}
             color="inherit"
             noWrap
             key={section.title}

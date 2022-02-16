@@ -1,7 +1,7 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
-
+import {RouterPathEnum} from './RouterPathEnum'
 import post1 from './posts/post_1';
 
 
@@ -11,11 +11,11 @@ export const footer_description = "";
 export const about_description = 'My name is Hussam Turjman and I am a professional software engineer based in Bremen, Germany. I am interested in developing intelligent and efficient machine learning models.';
 
 export const sections = [
-  { title: 'Home', url: '/' },
-  { title: 'About', url: 'about' },
-  { title: 'CV', url: 'cv' },
-  { title: 'Portfolio', url: 'portfolio' },
-  { title: 'Service', url: 'service' },
+  { title: 'Home', url: RouterPathEnum.HOME },
+  { title: 'About', url: RouterPathEnum.ABOUT },
+  { title: 'CV', url: RouterPathEnum.CV },
+  { title: 'Portfolio', url: RouterPathEnum.PORTFOLIO },
+  { title: 'Service', url: RouterPathEnum.SERVICE },
 ];
 
 export const mainFeaturedPost = {
