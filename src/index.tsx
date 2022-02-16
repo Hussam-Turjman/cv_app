@@ -1,15 +1,33 @@
-import * as React from 'react';
 import ReactDOM from 'react-dom';
-import CssBaseline from '@mui/material/CssBaseline';
-import { ThemeProvider } from '@mui/material/styles';
-import App from './App';
-import theme from './theme';
+import HomePage from './home/Home';
+import CVPage from './cv/CV';
+import PortfolioPage from './portfolio/Portfolio';
+import AboutPage from './about/About';
+import ServicePage from './service/Service';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { RouterPathEnum } from './RouterPathEnum'
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-    <CssBaseline />
-    <App />
-  </ThemeProvider>,
+  <BrowserRouter>
+   <Routes>
+ 
+   <Route path={RouterPathEnum.HOME} element={<HomePage  />}>
+     
+   </Route>
+   <Route path={RouterPathEnum.ABOUT} element={<AboutPage  />}>
+     
+     </Route>
+     <Route path={RouterPathEnum.PORTFOLIO} element={<PortfolioPage  />}>
+     
+     </Route>
+     <Route path={RouterPathEnum.CV} element={<CVPage  />}>
+     
+     </Route>
+     <Route path={RouterPathEnum.SERVICE} element={<ServicePage  />}>
+     
+     </Route>
+
+  </Routes>
+  </BrowserRouter>,
   document.querySelector('#root'),
 );
