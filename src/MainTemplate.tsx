@@ -8,7 +8,7 @@ import post1 from './posts/post_1';
 export const main_title = "";
 export const footer_title = "";
 export const footer_description = "";
-export const about_description = 'My name is Hussam Turjman and I am a professional software engineer based in Bremen, Germany. I am interested in developing intelligent and efficient machine learning models.';
+export const about_description = 'My name is Hussam Turjman and I am a professional software engineer based in Bremen, Germany.';
 
 export const sections = [
   { title: 'Home', url: RouterPathEnum.HOME },
