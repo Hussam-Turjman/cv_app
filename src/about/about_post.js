@@ -3,12 +3,7 @@ export default `
 ## Overview
 I am currently a master student in computer science, specializing in artificial intelligence 
 at the [University of Bremen](https://www.uni-bremen.de/). My research interests among other things
-are audio and video processing. My academic and professional journey goes back to 2012. Since then I have learned many 
-imperative programming languages such as C/C++, Java and C# and some functional languages like Haskell and Scala
-and a couple of scripting languages like Python and Typescript. Over the years I found C++ to be the most robust and elegant 
-programming language to build sophisticated applications and I consider myself now to be a senior C++ developer. Beside that, 
-as a data scientist I spent a lot of years learning Python scientific and machine learning frameworks like \`numpy\`, \`scikit-learn\`, \`matplotlib\`,
- \`seaborn\`, \`OpenCV\` and \`Tensorflow\` .    
+are audio and video processing. My academic and professional journey goes back to 2012.  
 
 ## Education
 - Computer science at the university of Bremen (2020-2023) **Master of Science**
